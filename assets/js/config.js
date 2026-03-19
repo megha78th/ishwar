@@ -5,7 +5,7 @@ const siteConfig = {
     brandName: "Ishwar",
     fullName: "Ishwar Cabs",
     phone: "+91 9876543210",          // Use format you want displayed
-    whatsapp: "919876543210",         // Use pure numbers with country code
+    whatsapp: "919889585168",         // Use pure numbers with country code
     email: "booking@ishwarcabs.com",
     address: "Pune, Maharashtra, India",
 
