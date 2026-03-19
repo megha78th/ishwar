@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Cab Booking Service</title>
+    <!-- Description will be set dynamically via config.js -->
+    <meta name="description" content="Book affordable and reliable cabs instantly.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <i class="fas fa-taxi"></i>
+                <span data-config="brandName">Brand</span>
+            </a>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#fleet">Our Fleet</a>
+                <a href="#benefits">Why Us</a>
+                <a href="#testimonials">Reviews</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" data-config-href="phone" class="btn btn-outline">
+                    <i class="fas fa-phone-alt"></i> <span data-config="phone">Phone</span>
+                </a>
+                <a href="#booking" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         HERO SECTION
+    =========================================== -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <!-- Hero Top Image (Edit the src attribute below to change the image) -->
+                <div class="hero-top-image">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=1200"
+                        alt="Ishwar Cabs - Premium Ride">
+                </div>
+                <h1>Fast, Safe & Affordable Cabs <br>Across Your City</h1>
+                <p>Book local, airport, and outstation rides in minutes with <span data-config="fullName">Ishwar
+                        Cabs</span>.</p>
+                <div class="hero-btns">
+                    <a href="#booking" class="btn btn-primary">Book Now</a>
+                    <a href="#fleet" class="btn btn-outline">View Fleet</a>
+                </div>
+                <div class="hero-stats"
+                    style="display:flex; gap:1.5rem; justify-content:center; margin-top:2.5rem; flex-wrap:wrap;">
+                    <div class="stat"><strong style="color:var(--white)">24/7</strong><br><span
+                            style="color:var(--text-light);font-size:0.85rem">Availability</span></div>
+                    <div class="stat"><strong style="color:var(--white)">10k+</strong><br><span
+                            style="color:var(--text-light);font-size:0.85rem">Rides</span></div>
+                    <div class="stat"><strong style="color:var(--white)">100%</strong><br><span
+                            style="color:var(--text-light);font-size:0.85rem">Verified Drivers</span></div>
+                    <div class="stat"><strong style="color:var(--white)">On-Time</strong><br><span
+                            style="color:var(--text-light);font-size:0.85rem">Pickup</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SERVICES SECTION
+    =========================================== -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Cab Services</h2>
+                <p>Ride options for daily commute, business travel, and family trips.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Service 1 -->
+                <div class="card">
+                    <div class="card-icon"
+                        style="font-size:1rem; padding:0.5rem; width:auto; height:auto; display:inline-block; border-radius:4px; margin-bottom:1rem;">
+                        Local city taxi</div>
+                    <h3>Local City Rides</h3>
+                    <p style="margin-bottom:1.5rem;">Quick point-to-point city travel with transparent fares and trained
+                        drivers.</p>
+                    <a href="#booking" class="btn btn-outline" style="font-size:0.85rem;">Book Local Cab</a>
+                </div>
+                <!-- Service 2 -->
+                <div class="card">
+                    <div class="card-icon"
+                        style="font-size:1rem; padding:0.5rem; width:auto; height:auto; display:inline-block; border-radius:4px; margin-bottom:1rem;">
+                        Airport taxi service</div>
+                    <h3>Airport Transfers</h3>
+                    <p style="margin-bottom:1.5rem;">On-time airport pickup and drop with live trip support and luggage
+                        assistance.</p>
+                    <a href="#booking" class="btn btn-outline" style="font-size:0.85rem;">Book Airport Cab</a>
+                </div>
+                <!-- Service 3 -->
+                <div class="card">
+                    <div class="card-icon"
+                        style="font-size:1rem; padding:0.5rem; width:auto; height:auto; display:inline-block; border-radius:4px; margin-bottom:1rem;">
+                        Outstation cab service</div>
+                    <h3>Outstation Trips</h3>
+                    <p style="margin-bottom:1.5rem;">Comfortable one-way and round-trip rides for weekends, tours, and
+                        business travel.</p>
+                    <a href="#booking" class="btn btn-outline" style="font-size:0.85rem;">Plan Outstation Ride</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FLEET SECTION
+    =========================================== -->
+    <section class="section fleet" id="fleet" style="background:var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Fleet</h2>
+                <p>Choose the right vehicle for solo, family, and group rides.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card" style="background:var(--light-bg);">
+                    <div style="font-size:0.85rem; color:var(--primary); font-weight:600; margin-bottom:0.5rem;">Sedan
+                        cab</div>
+                    <h3>Sedan</h3>
+                    <p>Ideal for 1-4 passengers, daily city rides and airport trips.</p>
+                </div>
+                <div class="card" style="background:var(--light-bg);">
+                    <div style="font-size:0.85rem; color:var(--primary); font-weight:600; margin-bottom:0.5rem;">SUV cab
+                    </div>
+                    <h3>SUV</h3>
+                    <p>Spacious ride for family travel, extra luggage, and outstation comfort.</p>
+                </div>
+                <div class="card" style="background:var(--light-bg);">
+                    <div style="font-size:0.85rem; color:var(--primary); font-weight:600; margin-bottom:0.5rem;">Tempo
+                        traveller</div>
+                    <h3>Tempo Traveller</h3>
+                    <p>Best for group tours, events, and long-distance journeys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         ROUTES SECTION
+    =========================================== -->
+    <section class="section routes" id="routes" style="background:var(--light-bg);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Routes</h2>
+                <p>Frequently booked routes with quick dispatch support.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="benefit-content">
+                        <h4>City ↔ Airport</h4>
+                        <p>24x7 airport pickup/drop with toll and parking guidance.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="benefit-content">
+                        <h4>Pune ↔ Mumbai</h4>
+                        <p>One-way and return trip options with experienced highway drivers.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="benefit-content">
+                        <h4>Pune ↔ Nashik</h4>
+                        <p>Comfortable intercity ride for business and family travel.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="benefit-content">
+                        <h4>Pune ↔ Kolhapur</h4>
+                        <p>Flexible pickup schedule and en-route stop support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         BOOKING FORM SECTION
+    =========================================== -->
+    <section class="section booking" id="booking">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book Your Ride</h2>
+                <p>Fill details and our team will confirm your cab on call/WhatsApp.</p>
+            </div>
+
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" class="form-control" placeholder="Enter mobile number" required>
+                </div>
+                <div class="form-group">
+                    <label for="pickup">Pickup Location</label>
+                    <input type="text" id="pickup" class="form-control" placeholder="Enter pickup location" required>
+                </div>
+                <div class="form-group">
+                    <label for="drop">Drop Location</label>
+                    <input type="text" id="drop" class="form-control" placeholder="Enter drop location" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Journey Date</label>
+                    <input type="date" id="date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" class="form-control" required>
+                </div>
+                <div class="form-group full-width">
+                    <label for="cabtype">Select Cab Type</label>
+                    <select id="cabtype" class="form-control" required>
+                        <option value="">Select...</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
+                        <option value="tempo">Tempo Traveller</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="notes">Special note (luggage, child seat, stopovers, etc.)</label>
+                    <textarea id="notes" class="form-control" placeholder="Any special requests..." rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg" style="grid-column: span 2;">
+                    Submit Booking Request
+                </button>
+                <div style="grid-column: span 2; text-align:center;">
+                    <br>
+                    <a href="#" data-config-href="whatsapp" class="btn btn-outline">
+                        <i class="fab fa-whatsapp"></i> Instant WhatsApp Booking
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-taxi"></i> <span data-config="fullName">Brand Name</span>
+                    </a>
+                    <p style="padding-top:0.5rem; color:var(--text-light);">Local Taxi | Airport Transfer | Outstation
+                        Cab</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-widget">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Cab Services</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#routes">Popular Routes</a></li>
+                        <li><a href="#booking">Book Your Ride</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-config="address">Address Here</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="#" data-config-href="phone" data-config="phone">Phone Here</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="#" data-config="email" data-config-href="email">Email Here</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span data-config="fullName">Brand Name</span>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         FLOATING ACTION WIDGETS
+    =========================================== -->
+    <div class="floating-widgets">
+        <a href="#" data-config-href="phone" class="float-btn float-call" title="Call Us" aria-label="Call Us">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="#" data-config-href="whatsapp" class="float-btn float-whatsapp" title="WhatsApp Us"
+            aria-label="WhatsApp Us" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/config.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
